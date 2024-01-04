@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <table class="table table-bordered border">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Year</th>
+        <th scope="col">Passed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let inventor of inventors">
+        <th scope="row">{{ inventor.id }}</th>
+        <td>{{ inventor.first }}</td>
+        <td>{{ inventor.last }}</td>
+        <td>{{ inventor.year }}</td>
+        <td>{{ inventor.passed }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
